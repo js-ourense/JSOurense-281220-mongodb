@@ -13,7 +13,7 @@ app.get('/', (req, res) => res.send('🦄 funciona!'))
 /**
  * Programa principal
  */
-MongoClient.connect(process.env.MONGO_URL, { // Connectar a MongoDB
+MongoClient.connect(process.env.MONGO_URL, { // Conectar a MongoDB
   useNewUrlParser: true
 })
   .then((client) => {
